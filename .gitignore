@@ -10,6 +10,9 @@ node_modules/
 __pycache__/
 *.pyc
 
+# TypeScript build cache
+*.tsbuildinfo
+
 # VS Code settings
 .vscode/
 
@@ -19,3 +22,12 @@ __pycache__/
 # Personal files
 *.tmp
 *.temp
+
+# Environment files
+.env
+.env.local
+
+# OS generated files
+Thumbs.db
+.DS_Store
+ehthumbs.db

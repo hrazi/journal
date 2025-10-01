@@ -1,0 +1,33 @@
+{
+  "name": "azure-devops-mcp",
+  "version": "1.0.0",
+  "description": "Azure DevOps MCP Server - Provides Model Context Protocol integration for Azure DevOps services",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "journal": "npx tsx src/journal-generator.ts",
+    "journal:enhanced": "tsc && node dist/mcp-journal-integrator.js",
+    "journal:build": "tsc && node dist/journal-generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "azure-devops", "model-context-protocol"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.5",
+    "azure-devops-node-api": "^14.1.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
