@@ -1,0 +1,21 @@
+# Logs and temp files
+*.log
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# Azure DevOps cache
+.ado_orgs.cache
+
+# Personal files
+*.tmp
+*.temp
